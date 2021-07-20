@@ -1,0 +1,102 @@
+.postWrapper {
+
+    .postContainer {
+
+        &.none {
+            display: none;
+        }
+    }
+}
+
+.modalWrapper {
+    display: none;
+    z-index: 20;
+    padding: 25px;
+    background-color: #fff;
+    color: royalblue;
+    box-shadow: 0px 0px 3px royalblue;
+    width: 400px;
+    top: 200px;
+    left: calc(50% - 175px);
+    position: absolute;
+    font-family: sans-serif;
+
+    &.active {
+        display: block;
+    }
+
+    .editPostTitleInput {
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 0;
+        margin-bottom: 25px;
+        color: royalblue;
+        font-weight: bold;
+        outline: none;
+        border: none;
+        box-shadow: 0px 0px 3px gray;
+        font-size: 20px;
+
+        &.error {
+            border: 2px solid red;
+        }
+    }
+
+    .editPostBodyInput {
+        padding: 10px;
+        width: 100%;
+        height: 100px;
+        box-sizing: border-box;
+        border-radius: 0;
+        margin-bottom: 25px;
+        color: royalblue;
+        font-weight: bold;
+        outline: none;
+        border: none;
+        box-shadow: 0px 0px 3px gray;
+        font-size: 20px;
+        color: #fff;
+
+        &.error {
+            border: 2px solid red;
+        }
+    }
+
+    .saveButton {
+        padding: 10px 30px;
+        font-size: 20px;
+        border-radius: 0;
+        color: white;
+        border: none;
+        font-weight: bold;
+        background: royalblue;
+        cursor: pointer;
+    }
+
+    .closeButton {
+        font-size: 30px;
+        font-weight: bold;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        text-decoration: none !important;
+        background: white;
+    }
+}
+
+.shadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    display: none;
+    background: rgba(0,0,0,0.45);
+
+    &.active {
+        display: block;
+    }
+}
